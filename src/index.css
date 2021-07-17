@@ -12,44 +12,93 @@ nav{
 }
 .links{
     display: flex;
-    flex-basis: 60%;
+    flex-basis: 70%;
+    list-style-type: none;
+    margin: 22px 0px 0px 0px;
 }
-.links h2{
+nav h2{
     font-size: 40px;
     margin: 0px 0px 0px 5px;
     color: rgb(177, 167, 167);
     font-family: 'Pacifico', cursive;
 }
-.links ul{
-    list-style-type: none;
-    margin: 22px 0px 0px 30px;
-}
-.links li{
+li{
     display: inline-block;
     margin: 5px 10px;
 }
-.links li a{
+li a{
     text-decoration: none;
     font-size: 18px;
     color: rgb(177, 167, 167);
 }
-.socialMedia-icons{
-    flex-basis: 10%;
-    margin-top: 22px;
+.icons{
+    margin: 22px 10px 0 0;
 }
-.socialMedia-icons button {
+.icons button{
+    margin: 0 5px;
     outline: none;
     background-color: rgb(5, 5, 61);
     border: none;
-    width: 35px;
     height: 35px;
     font-size: 25px;
     cursor: pointer;
     color: rgb(177, 167, 167);
 }
-.links li a:hover{
+li a:hover{
     color: rgb(241, 232, 232);
 }
-.socialMedia-icons button:hover{
+.icons button:hover{
     color: rgb(241, 232, 232);
+}
+.menu button{
+    width: 35px;
+    height: 35px;
+    display: none;
+    margin-top: 22px;
+    outline: none;
+    background-color: rgb(5, 5, 61);
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(177, 167, 167);
+}
+@media screen and (max-width:960px) {
+    .menu{
+        margin-right: 20px;
+    }
+    .menu button{
+        display: inline-block;
+    }
+    .links{
+        position: absolute;
+        width: 100%;
+        margin-top: 75px;
+        opacity: 1;
+        left: -100%;
+    }
+    .links.active{
+        display: block;
+        background: rgb(49, 49, 112);
+        left: 0px;
+        opacity: 1;
+        height: 68%;
+        transition: all 0.5s ease;
+        margin-top: 75px;
+    }
+    li {
+        margin: 0;
+        display: grid;
+    }
+    li a{
+        padding: 50px;
+    }
+    li a:hover{
+        color: white;
+        background-color: rgb(5, 5, 61);
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+    .icons{
+        padding-right:95px ;
+    }
 }
