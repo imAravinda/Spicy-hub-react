@@ -6,6 +6,7 @@ const Navbar = () => {
     const [click,setClick]=useState(false);
     const handleClick= () => setClick(!click);
     return ( 
+        <div className="navbar">
             <nav>
                 <h2>Spicy Hut</h2>
                     <ul className={click ?"links active" : "links"}>
@@ -23,6 +24,7 @@ const Navbar = () => {
                         <button><FontAwesomeIcon icon={click ? faTimes: faBars }/></button>
                 </div>
             </nav>
+        </div>
      );
 }
 

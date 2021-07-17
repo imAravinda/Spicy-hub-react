@@ -4,11 +4,13 @@
     padding: 0;
 }
 nav{
+    position: fixed;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background: rgb(5, 5, 61);
     height: 75px;
+    width: 100%;
+    z-index: 1;
 }
 .links{
     display: flex;
@@ -17,7 +19,7 @@ nav{
     margin: 22px 0px 0px 0px;
 }
 nav h2{
-    font-size: 40px;
+    font-size: 38px;
     margin: 0px 0px 0px 5px;
     color: rgb(177, 167, 167);
     font-family: 'Pacifico', cursive;
@@ -70,11 +72,11 @@ li a:hover{
         display: inline-block;
     }
     .links{
-        position: absolute;
+        position: fixed;
         width: 100%;
         margin-top: 75px;
         opacity: 1;
-        left: -100%;
+        left: -110%;
     }
     .links.active{
         display: block;
@@ -84,6 +86,7 @@ li a:hover{
         height: 68%;
         transition: all 0.5s ease;
         margin-top: 75px;
+        z-index: 1;
     }
     li {
         margin: 0;
@@ -101,4 +104,28 @@ li a:hover{
     .icons{
         padding-right:95px ;
     }
+}
+.content{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#034d46d5,#7c76762d),url("/src/cover.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.cover h1,p{
+    position: relative;
+    top: 100px;
+}
+.cover h1{
+    font-size: 150px;
+    font-family: 'Pacifico', cursive;
+    color: #c9ddd7;
+    font-style: italic;
+}
+.cover p{
+    font-size: 30px;
+    color: #c9ddd7;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
