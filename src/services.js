@@ -1,5 +1,6 @@
-import img1 from "./images/take1.jpg";
-import img2 from "./images/days.jpg"
+import ImageSlide from "./ImageSlide";
+import img2 from "./images/days.jpg";
+import { SliderData } from './SliderData';
 const services = () => {
     return ( 
         <div className="services">
@@ -10,7 +11,7 @@ const services = () => {
                     <h1>Takeaway</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus natus vitae architecto error, corrupti dolore eveniet sunt delectus quidem eius illo, fuga ad alias nisi, tenetur voluptatum! Tempore quam quos sit explicabo dignissimos provident?</p>
                 </div>
-                <img src={img1} alt="" />
+                <ImageSlide slides={SliderData}/>
             </div>
             <div className="parties">
                 <img src={img2} alt="" />

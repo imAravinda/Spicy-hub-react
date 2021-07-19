@@ -243,7 +243,6 @@ li a:hover{
     justify-content: space-between;
 }
 .text{
-    flex-basis: 45%;
     margin: 0 10px 0 10px;
 }
 .text h1{
@@ -256,16 +255,6 @@ li a:hover{
     position: relative;
     top: 10px;
     text-align:initial;
-
-}
-.take img{
-    width: 70%;
-    height: 450px;
-    position: relative;
-    right: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
 }
 .parties{
     margin: 10px;
@@ -273,7 +262,7 @@ li a:hover{
     justify-content: space-between;
 }
 .parties img{
-    width: 70%;
+    width: 950px;
     height: 450px;
     position: relative;
     left: 20px;
@@ -290,4 +279,49 @@ li a:hover{
     left: 11%;
     border: none;
     background: #648175;
+}
+.left-arrow{
+    position:absolute;
+    top: 225px;
+    left: 30px;
+    font-size: 35px;
+    color: rgb(191, 204, 202);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.right-arrow{
+    position:absolute;
+    top: 225px;
+    right: 20px;
+    font-size: 35px;
+    color: rgb(191, 204, 202);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.img{
+    width: 950px;
+    position: inherit;
+    height: 450px;
+    right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.slider{
+    height: 450px;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.slide{
+    opacity: 0;
+    transition-duration: 0.5s ease ;
+}
+.slide.active{
+    opacity: 1;
+    transition-duration: 0.5s ;
+    transform: scale(1.03);
 }
