@@ -33,6 +33,7 @@ li a{
     text-decoration: none;
     font-size: 18px;
     color: rgb(177, 167, 167);
+    font-weight: bold;
 }
 .icons{
     margin: 22px 10px 0 0;
@@ -52,6 +53,9 @@ li a:hover{
 }
 .icons button:hover{
     color: rgb(241, 232, 232);
+    transform: scale(0.9);
+    -webkit-transform:scale(0.9);
+    -ms-transform: scale(0.9);
 }
 .menu button{
     width: 35px;
@@ -95,6 +99,7 @@ li a:hover{
     }
     li a{
         padding: 50px;
+        transition: 0.5s;
     }
     li a:hover{
         color: white;
@@ -180,9 +185,12 @@ hr{
     font-size: 17px;
     background: rgb(41, 129, 212);
     cursor: pointer;
+    transition:0.5s;
 }
 .ord:hover{
-    transform: translateY(-3px);
+    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    -ms-transform: scale(0.9);
 }
 @media screen and (max-width:770px){
     .cover h1{
@@ -200,4 +208,72 @@ hr{
         height: 30px;
         font-size: 12px;
     }
+}
+.serv{
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+.services{
+    background: #7396889d;
+}
+.title{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    top: 0px;
+    color: #034b4be5;
+    display: inline-block;
+}
+.title::after{
+    content: '';
+    width: 40px;
+    height: 55px;
+    background:linear-gradient(#034d46d5,#7c76762d) ;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transform: rotate(75deg);
+    border-bottom-left-radius:50px ;
+    border-top-right-radius: 50px;
+}
+.take{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.take h1{
+    font-style: italic;
+    position: relative;
+    color: rgb(2, 43, 37);
+    top: 0;
+    left: 120px;
+}
+.take img{
+    width: 70%;
+    height: 450px;
+    position: relative;
+    right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.parties{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.parties h1{
+    font-style: italic;
+    right: 120px;
+    position: relative;
+    color: rgb(2, 43, 37);
+    top: 0;
+}
+.parties img{
+    width: 70%;
+    height: 450px;
+    position: relative;
+    left: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }

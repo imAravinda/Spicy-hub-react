@@ -1,5 +1,5 @@
-const Home = ({click}) => {
-    return ( 
+const Home = () => {
+    return (
         <div className="cover">
             <h1>Spicy Hut</h1>
             <hr />
