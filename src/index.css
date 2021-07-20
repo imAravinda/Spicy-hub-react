@@ -11,7 +11,7 @@ nav{
     background: rgb(5, 5, 61);
     height: 75px;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .links{
     display: flex;
@@ -286,7 +286,7 @@ li a:hover{
     left: 30px;
     font-size: 35px;
     color: rgb(191, 204, 202);
-    z-index: 10;
+    z-index: 1;
     cursor: pointer;
     user-select: none;
 }
@@ -296,13 +296,12 @@ li a:hover{
     right: 20px;
     font-size: 35px;
     color: rgb(191, 204, 202);
-    z-index: 10;
     cursor: pointer;
+    z-index: 1;
     user-select: none;
 }
 .img{
     width: 950px;
-    position: inherit;
     height: 450px;
     right: 20px;
     border-radius: 20px;
