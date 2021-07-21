@@ -214,32 +214,29 @@ li a:hover{
     }
 }
 .serv{
-    display: block;
+    display:initial;
     width: 100%;
     height: 100vh;
 }
 .services{
-    background: #739688;
+    background: #c6c9c8;
+    padding-bottom: 10px;
 }
 .title{
     font-size: 50px;
     font-family: 'Pacifico', cursive;
     position: relative;
     top: 0px;
-    color: #034b4b;
+    color: #032b4b;
     display: inline-block;
 }
 .title::after{
-    content: '';
-    width: 50px;
-    height: 35px;
-    background:linear-gradient(#0e2983b6,#7c767600) ;
+    content: 'Services';
     position: absolute;
     left: 0px;
-    top: 5px;
-    transform: rotate(110deg);
-    border-bottom-left-radius:50px ;
-    border-top-right-radius: 50px;
+    top: -6px;
+    transform: rotate(0deg);
+    color: #032b4ba4;
 }
 .take{
     margin: 10px;
@@ -255,7 +252,7 @@ li a:hover{
     top: 0;
     font-family: 'Lato', sans-serif;
     font-variant:small-caps;
-    font-style: oblique;
+    font-size: 40px;
 }
 .text p{
     position: relative;
@@ -269,8 +266,8 @@ li a:hover{
 }
 .services hr{
     position: relative;
-    top: 0;
-    margin-bottom: 20px;
+    top: 20px;
+    margin-bottom: 30px;
     height: 3px;
     width: 80%;
     left: 11%;
@@ -279,7 +276,7 @@ li a:hover{
 }
 .left-arrow{
     position:absolute;
-    top: 225px;
+    top: 250px;
     left: 30px;
     font-size: 35px;
     color: rgb(191, 204, 202);
@@ -289,7 +286,7 @@ li a:hover{
 }
 .right-arrow{
     position:absolute;
-    top: 225px;
+    top: 250px;
     right: 20px;
     font-size: 35px;
     color: rgb(191, 204, 202);
@@ -311,6 +308,7 @@ li a:hover{
     position: relative;
     border-radius: 20px;
     margin: 10px 20px 20px 0;
+    padding-top: 50px;
 }
 .slide{
     opacity: 0;
@@ -321,7 +319,34 @@ li a:hover{
     transition-duration: 0.5s ;
     transform: scale(1.03);
 }
-@media screen and (max-width:1180px) {
+.party{
+    display: grid;
+    margin: 20px;
+}
+.des{
+    display: flex;
+    justify-content: space-between;
+}
+.party h2{
+    font-style: italic;
+    color: rgb(3, 63, 53);
+}
+.des p{
+    position: relative;
+    top: 20px;
+    text-align:start;
+}
+.icon{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid #2a7c74;
+    color: #034d46;
+}
+@media screen and (max-width:1360px) {
     .slider{
         height: 400px;
         margin-bottom: 15px;
@@ -333,6 +358,27 @@ li a:hover{
         right: 15px;
         margin-bottom: 15px;
         margin-left: 15px;
+    }
+    .party{
+        margin: 10px;
+    }
+    .party h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .des p{
+        font-size: 15px;
+        top: 10px;
+    }
+    .icon{
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:1070px){
+    .img{
+        width: 600px;
     }
 }
 @media screen and (max-width:920px) {
@@ -349,9 +395,8 @@ li a:hover{
     }
     .img{
         width:99%;
-        height: 340px;
+        height: 400px;
         margin-left: 6px;
-        margin-top: 25px;
         padding: 5px;
     }
     .slider{
@@ -366,7 +411,7 @@ li a:hover{
     }
     .right-arrow,.left-arrow{
         font-size: 25px;
-        top: 175px;
+        top: 250px;
     }
     .title{
         font-size: 35px;
@@ -376,5 +421,13 @@ li a:hover{
     }
     .text p{
         font-size: 15px;
+    }
+}
+@media screen and (max-width:500px){
+    .img{
+        height: 340px;
+    }
+    .right-arrow,.left-arrow{
+        top: 200px;
     }
 }
