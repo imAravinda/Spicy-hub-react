@@ -27,7 +27,7 @@ const services = () => {
                         </div>
                     </div>
                 </div>
-                <ImageSlide slides={SliderData} className="slide1"/>
+                <ImageSlide slides={SliderData} autoPlay={3} className="slide1"/>
             </div>
             <hr />
             <div className="parties">
@@ -55,7 +55,7 @@ const services = () => {
                         </div>
                     </div>
                 </div>
-                <ImageSlide slides={SliderData1} className="slide2"/>
+                <ImageSlide slides={SliderData1} autoPlay={3} className="slide2"/>
             </div>
             <hr />
         </div>

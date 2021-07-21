@@ -416,6 +416,9 @@ li a:hover{
     .title{
         font-size: 35px;
     }
+    .title::after{
+        top: -5px;
+    }
     .text h1{
         font-size: 25px;
     }
