@@ -1,6 +1,5 @@
 import { faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const SignIn = () => {
     return ( 
         <div className="Sign">
@@ -15,7 +14,7 @@ const SignIn = () => {
                 <FontAwesomeIcon icon={faLock} className="logI"/>
                 <input type="password" name="password" id="pwd" required placeholder="Password"/><br />
                 <button className="Log">Log In</button><br />
-                <p>Don't have an account ? <a href="./">Sign Up</a></p>
+                <p>Don't have an account ? <button id="signup"> Sign Up</button></p>
             </form>
         </div>
      );

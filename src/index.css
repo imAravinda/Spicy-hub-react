@@ -505,13 +505,20 @@ li a:hover{
     position: relative;
     top: 3px;
 }
+#signup{
+    background: none;
+    color: blue;
+    padding: 0px;
+    width: 55px;
+}
+
 @media screen and (max-width:770px) {
     .reg{
         height: 90vh;
     }
     .Sign{
         width: 350px;
-        height: 430px;
+        height: 450px;
         padding-top: 25px;
     }
     .SignIn input{
@@ -526,6 +533,9 @@ li a:hover{
     .Sign h3{
         font-size: 22px;
         padding: 5px;
+    }
+    .Sign hr{
+        margin-bottom: 10px;
     }
     .Sign label{
         font-size: 18px;

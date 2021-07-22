@@ -4,9 +4,9 @@ import { SliderData1 } from "./SliderData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBlackTie} from "@fortawesome/free-brands-svg-icons";
 import { faBirthdayCake,faGlassMartiniAlt, faIceCream, faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
-const services = () => {
+const Services = () => {
     return ( 
-        <div className="services">
+        <div data-aos="fade-up" className="services">
             <h1 className="title">Services</h1>
             <hr />
             <div className="take">
@@ -62,4 +62,4 @@ const services = () => {
      );
 }
  
-export default services;
+export default Services;
