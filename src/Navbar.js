@@ -11,7 +11,7 @@ const Navbar = () => {
                 <h2>Spicy Hut</h2>
                 <ul className={click ?"links active" : "links"}>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">Menu</a></li>
+                    <li><a href="/Menu">Menu</a></li>
                     <li><a href="/">About Us</a></li>
                     <li><a href="/">Contact Us</a></li>
                 </ul>

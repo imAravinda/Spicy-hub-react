@@ -318,6 +318,7 @@ li a:hover{
     opacity: 1;
     transition-duration: 0.5s ;
     transform: scale(1.03);
+    width: 100%;
 }
 .party{
     display: grid;
@@ -348,6 +349,7 @@ li a:hover{
 }
 @media screen and (max-width:1360px) {
     .slider{
+        width: 100%;
         height: 400px;
         margin-bottom: 15px;
         margin-right: 15px;
@@ -386,7 +388,6 @@ li a:hover{
         height: 100vh;
     }
     .take{
-        margin: 10px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -442,19 +443,29 @@ li a:hover{
     justify-content: center;
 }
 .Sign{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width: 500px;
     margin: 50px;
     background: rgb(175, 235, 222);
     border-radius: 20px;
+    position: relative;
 }
-.Sign h2{
-    text-align: center;
-}
+
 .SignIn{
     width: 100%;
     height: 400px;
+    opacity: 1;
+    position: absolute;
+}
+.Signup{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    transition-duration: 0.5s all ease;
 }
 .SignIn input{
     margin: 20px;
@@ -474,10 +485,30 @@ li a:hover{
     background: #0cc2c2;
     color: white;
     border: none;
+    margin-bottom: 20px;
+}
+.Signup input{
+    margin: 20px;
+    width: 350px;
+    height: 30px;
+    padding:5px ;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.Signup button{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background: #0cc2c2;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
 }
 .Sign h2{
     font-size: 38px;
-    margin: 0px 0px 0px 5px;
     color: #ffffff;
     font-family: 'Pacifico', cursive;
 }
@@ -485,6 +516,7 @@ li a:hover{
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     color: #077269;
+    margin-top: 0;
 }
 .Sign label{
     font-size: 20px;
@@ -492,10 +524,11 @@ li a:hover{
     color: #000000c5;
 }
 .Sign hr{
-    width: 50%;
+    width: 30%;
     position: relative;
+    left: 35%;
     top: 0;
-    left: 25%;
+    margin: 10px 0;
 }
 .logI{
     color: #077269;
@@ -505,13 +538,10 @@ li a:hover{
     position: relative;
     top: 3px;
 }
-#signup{
-    background: none;
-    color: blue;
-    padding: 0px;
-    width: 55px;
+#signup a{
+    cursor: pointer;
+    text-decoration: none;
 }
-
 @media screen and (max-width:770px) {
     .reg{
         height: 90vh;
