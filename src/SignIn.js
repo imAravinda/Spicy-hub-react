@@ -17,7 +17,7 @@ const SignIn = () => {
                 <FontAwesomeIcon icon={faLock} className="logI"/>
                 <input type="password" name="password" id="password" required placeholder="Password"/><br />
                 <button className="Log">Log In</button><br />
-                <span id="signup">Already have an account ? <a href="#"> Sign In </a></span>
+                <span id="signup">Already have an account ? <a href="/"> Sign In </a></span>
             </form>
         </div>
      );

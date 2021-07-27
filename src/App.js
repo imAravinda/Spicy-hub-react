@@ -32,7 +32,9 @@ function App() {
           </>
         </Route>
         <Route>
-          <Menu path="/Menu" />
+          <div className="MenuPage">
+            <Menu path="/Menu" />
+          </div>
         </Route>
       </Switch>
       </div>      
