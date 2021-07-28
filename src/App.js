@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import Menu from './Menu';
+import Aboutus from './About';
 function App() {
   useEffect(() => {
     Aos.init({duration:1000});    
@@ -16,11 +17,10 @@ function App() {
     <Router>
     <div className="App">
       <Navbar />
-      <div data-aos="fade-up">
       <Switch>
         <Route exact path="/">
           <>
-            <div data-aos="fade-up" className="content">
+            <div className="content">
               <Home />
             </div>
             <div data-aos="fade-up" className="serv">
@@ -31,14 +31,18 @@ function App() {
             </div>
           </>
         </Route>
-        <Route>
-          <div className="MenuPage">
-            <Menu path="/Menu" />
+        <Route  exact path="/Menu">
+          <div className="MenuPage" >
+            <Menu />
+          </div>
+        </Route>
+        <Route exact path="/About">
+          <div className="aboutus">
+            <Aboutus />
           </div>
         </Route>
       </Switch>
       </div>      
-    </div>
   </Router>
   );
 }

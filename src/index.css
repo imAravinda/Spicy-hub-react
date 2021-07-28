@@ -26,6 +26,7 @@ nav h2{
     margin: 0px 0px 0px 5px;
     color: rgb(177, 167, 167);
     font-family: 'Pacifico', cursive;
+    font-style: italic;
 }
 li{
     display: inline-block;
@@ -563,7 +564,7 @@ li a:hover{
         top: 4px;
     }
 }
- /* Menu */
+ /* Menu Page*/
  .MenuPage{
      display: block;
      height: 100vh;
@@ -688,4 +689,75 @@ li a:hover{
     .foods p{
         font-size: 13px;
     }
+}
+/* About Us */
+.aboutus{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.About{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(1, 9, 32);
+    color: rgb(203, 231, 231);
+    position: relative;
+    margin: 0;
+    padding-bottom:5% ;
+    top: 3%;
+}
+.About h1{
+    color: rgb(177, 167, 167);
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    position: relative;
+    top: 8%;
+    font-style: italic;
+}
+.description{
+    flex-basis: 90%;
+    margin: 20px  0;
+    position: relative;
+    top: 5%;
+}
+.description p{
+    top: 5%;
+    bottom: 0;
+    text-align: justify;
+    color: rgb(232, 241, 239);
+}
+.description h2{
+    font-family: 'Lato', sans-serif;
+    font-variant:small-caps;
+    font-style: italic;
+    color: rgb(151, 223, 219);
+}
+.description hr{
+    top: 5px;
+    border: none;
+    background:rgb(151, 223, 219);
+    height: 2px
+}
+@media screen and (max-width:770px) {
+    .About{
+        height: 115%;
+        padding-bottom:15% ;
+    }
+    .About h1{
+        font-size: 40px;
+    }
+    .description{
+        top: 6%;
+    }
+    .description h2{
+        font-size: 20px;
+    }
+    .description p{
+        font-size: 14px;
+    }
+
 }

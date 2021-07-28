@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faFacebook,faInstagram,faTwitter} from '@fortawesome/free-brands-svg-icons'
 import { faBars,faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
     const [click,setClick]=useState(false);
     const handleClick= () => setClick(!click);
@@ -10,10 +11,10 @@ const Navbar = () => {
             <nav>
                 <h2>Spicy Hut</h2>
                 <ul className={click ?"links active" : "links"}>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/Menu">Menu</a></li>
-                    <li><a href="/">About Us</a></li>
-                    <li><a href="/">Contact Us</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/Menu">Menu</Link></li>
+                    <li><Link to="/About">About Us</Link></li>
+                    <li><Link to="/">Contact Us</Link></li>
                 </ul>
                 <div className="icons"> 
                     <button ><FontAwesomeIcon icon={faFacebook}/></button>
