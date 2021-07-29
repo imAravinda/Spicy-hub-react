@@ -14,7 +14,7 @@ const Navbar = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/Menu">Menu</Link></li>
                     <li><Link to="/About">About Us</Link></li>
-                    <li><Link to="/">Contact Us</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
                 <div className="icons"> 
                     <button ><FontAwesomeIcon icon={faFacebook}/></button>

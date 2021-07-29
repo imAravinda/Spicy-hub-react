@@ -6,7 +6,7 @@ import { faBlackTie} from "@fortawesome/free-brands-svg-icons";
 import { faBirthdayCake,faGlassMartiniAlt, faIceCream, faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
 const Services = () => {
     return ( 
-        <div data-aos="fade-up" className="services">
+        <div data-aos="fade-up" className="services" id="services">
             <h1 className="title">Services</h1>
             <hr />
             <div className="take">

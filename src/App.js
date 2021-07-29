@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import Menu from './Menu';
 import Aboutus from './About';
+import Contact from './contact';
 function App() {
   useEffect(() => {
     Aos.init({duration:1000});    
@@ -39,6 +40,11 @@ function App() {
         <Route exact path="/About">
           <div className="aboutus">
             <Aboutus />
+          </div>
+        </Route>
+        <Route exact path="/contact">
+          <div className="contactus">
+            <Contact />
           </div>
         </Route>
       </Switch>

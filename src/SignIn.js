@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SignIn = () => {
 
     return ( 
-        <div className="Sign">
+        <div className="Sign" id="sign">
             <form action="" className="SignUp" name="SignIn">
                 <h3>Register</h3>
                 <hr />
