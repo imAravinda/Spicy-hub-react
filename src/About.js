@@ -1,7 +1,9 @@
+import imgc from './images/cover4.jpg'
 const Aboutus = () => {
     return ( 
         <div className="About">
             <h1>Spicy Hut</h1>
+            <img src={imgc} alt="" />
             <div className="description">
                 <h2>Our History</h2>
                 <hr />
