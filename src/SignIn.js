@@ -5,7 +5,7 @@ import Validation from "./validation";
 const SignIn = ({transferForm,}) => {
     const [values,setValues]=useState({
         username:"",
-        Lpassword:""
+        password:""
     })
     const handleTransfer = () => {
         transferForm(true);
@@ -32,8 +32,8 @@ const SignIn = ({transferForm,}) => {
                 {errors.username && <p className="errors">{errors.username}</p>}<br />
                 <label htmlFor="">Password</label><br />
                 <FontAwesomeIcon icon={faLock} className="logI"/>
-                <input type="password" name="password"  required placeholder="Password" value={values.Lpassword} onChange={handleChange}/>
-                {errors.Lpassword && <p className="errors">{errors.Lpassword}</p>}<br />
+                <input type="password" name="password"  required placeholder="Password" value={values.password} onChange={handleChange}/>
+                {errors.password && <p className="errors">{errors.password}</p>}<br />
                 <button className="Log" onClick={handleSubmit}>Log In</button><br />
                 <span id="signup">Don't have an account ? <button className="click" onClick={handleTransfer}> Sign Up </button></span>
             </form>

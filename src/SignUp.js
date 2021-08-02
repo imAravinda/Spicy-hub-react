@@ -1,6 +1,7 @@
 import { faEnvelope, faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import Validation from "./validation";
 const SignUp = ({transferForm}) => {
     const [values,setValues]=useState({
@@ -8,7 +9,7 @@ const SignUp = ({transferForm}) => {
         email:"",
         password:""
     })
-
+    const history=useHistory();
     const handleTransfer = () => {
         transferForm(true);
     }
@@ -21,7 +22,9 @@ const SignUp = ({transferForm}) => {
             method: 'POST',
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(blog)
-        });
+        }).then(()=>{
+            history.push('/');
+        })
     }
     const handleChange = (event) => {
         setValues({

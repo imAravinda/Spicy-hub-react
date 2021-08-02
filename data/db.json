@@ -1,10 +1,22 @@
 {
   "blogs": [
     {
-      "Fullname": "Aravinda  Chathuranga",
+      "Fullname": "Aravinda",
       "email": "acfernando1999@gmail.com",
       "password": "Ara199913@",
       "id": 1
+    },
+    {
+      "Fullname": "Pasindu",
+      "email": "pasi1998@gmail.com",
+      "password": "Pasi1998",
+      "id": 2
+    },
+    {
+      "Fullname": "Piyumantha",
+      "email": "cherinpiyumantha@gmail.com",
+      "password": "piyumantha1234",
+      "id": 3
     }
   ]
 }
