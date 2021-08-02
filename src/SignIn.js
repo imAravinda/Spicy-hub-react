@@ -2,12 +2,14 @@ import {faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Validation from "./validation";
-const SignIn = () => {
+const SignIn = ({transferForm,}) => {
     const [values,setValues]=useState({
-        Fullname:"",
-        email:"",
-        password:""
+        username:"",
+        Lpassword:""
     })
+    const handleTransfer = () => {
+        transferForm(true);
+    }
     const [errors,setErrors]=useState({})
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -21,8 +23,8 @@ const SignIn = () => {
     }
     return ( 
         <div className="Sign" id="sign">
-            <form action="" className="SignIn" name="SignIn">
-                <h3>Login</h3>
+            <form action="" className="SignIn" name="SignIn" onSubmit={handleSubmit}>
+                <h3>Log In</h3>
                 <hr />
                 <label htmlFor="UserName">User Name</label><br />
                 <FontAwesomeIcon icon={faUser} className="logI"/>
@@ -30,10 +32,10 @@ const SignIn = () => {
                 {errors.username && <p className="errors">{errors.username}</p>}<br />
                 <label htmlFor="">Password</label><br />
                 <FontAwesomeIcon icon={faLock} className="logI"/>
-                <input type="password" name="password"  required placeholder="Password" value={values.password} onChange={handleChange}/>
-                {errors.password && <p className="errors">{errors.password}</p>}<br />
+                <input type="password" name="password"  required placeholder="Password" value={values.Lpassword} onChange={handleChange}/>
+                {errors.Lpassword && <p className="errors">{errors.Lpassword}</p>}<br />
                 <button className="Log" onClick={handleSubmit}>Log In</button><br />
-                <span id="signup">Don't have an account ? <button class="click"> Sign Up </button></span>
+                <span id="signup">Don't have an account ? <button className="click" onClick={handleTransfer}> Sign Up </button></span>
             </form>
         </div>
      );

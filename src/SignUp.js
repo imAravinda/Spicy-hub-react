@@ -16,6 +16,12 @@ const SignUp = ({transferForm}) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setErrors(Validation(values));
+        const blog = {...values};
+        fetch('http://localhost:5000/blogs',{
+            method: 'POST',
+            headers: {"Content-Type" : "application/json"},
+            body: JSON.stringify(blog)
+        });
     }
     const handleChange = (event) => {
         setValues({
@@ -25,7 +31,7 @@ const SignUp = ({transferForm}) => {
     }
     return ( 
         <div className="Sign" id="sign">
-            <form action="" className="SignUp" name="SignIn">
+            <form action="" className="SignUp" name="SignIn" onSubmit={handleSubmit}>
                 <h3>Register</h3>
                 <hr />
                 <label htmlFor="FullName">Full Name</label><br />

@@ -7,9 +7,12 @@ const Form = () => {
     const transferForm = () => {
         setWrap(true);
     }
+    const transferFormagain = () => {
+        setWrap(false);
+    }
     return ( 
         <div className="Form" >
-            {!wrap ? <SignUp transferForm={transferForm}/> : <SignIn/> }
+            {!wrap ? <SignUp transferForm={transferForm}/> : <SignIn transferForm={transferFormagain}/> }
         </div>
      );
 }

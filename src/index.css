@@ -567,15 +567,22 @@ li a:hover{
     margin-top: 20px;
 }
 @media screen and (max-width:770px) {
-    .reg{
-        height: 90vh;
+    .Form{
+        height: 100vh;
     }
     .Sign{
         width: 350px;
-        height: 450px;
+        height: 500px;
         padding-top: 25px;
+        justify-content: center;
+        align-items: center;
     }
     .SignUp input{
+        width: 150px;
+        height: 20px;
+        font-size: 12px;
+    }  
+    .SignIn input{
         width: 150px;
         height: 20px;
         font-size: 12px;
@@ -597,7 +604,7 @@ li a:hover{
     .Sign p{
         font-size: 12px;
     }
-    .SignUp button{
+    .Log{
         width: 65px;
         height: 30px;
         font-size: 12px;
