@@ -11,6 +11,7 @@ import Menu from './Menu';
 import Aboutus from './About';
 import Contact from './contact';
 import Form from './Form';
+import Order from './Order';
 function App() {
   useEffect(() => {
     Aos.init({duration:1000});    
@@ -46,6 +47,11 @@ function App() {
         <Route exact path="/contact">
           <div className="contactus">
             <Contact />
+          </div>
+        </Route>
+        <Route exact path="/Order">
+          <div className="OrderNow">
+            <Order />
           </div>
         </Route>
       </Switch>

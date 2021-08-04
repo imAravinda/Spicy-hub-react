@@ -2,7 +2,7 @@ import {faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Validation from "./validation";
-const SignIn = ({transferForm,}) => {
+const SignIn = ({transferForm}) => {
     const [values,setValues]=useState({
         username:"",
         password:""
