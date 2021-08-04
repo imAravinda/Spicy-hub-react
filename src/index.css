@@ -980,7 +980,7 @@ li a:hover{
     height: 100vh;
 }
 .Order{
-    height: 250%;
+    height: 235%;
     background-color: #babebd;
 }
 .heading{
@@ -994,7 +994,7 @@ li a:hover{
     content: 'Order Now';
     position: absolute;
     left: 0px;
-    top: -6px;
+    top: -5%;
     transform: rotate(0deg);
     color: #032b4ba4;
 }
@@ -1016,19 +1016,39 @@ li a:hover{
     top: 8%;
 }
 .card{
-    width: 550px;
-    height: 450px;
-    display: grid;
+    width: 500px;
+    height: 400px;
+    display: block;
     margin: 15px;
     padding: 10px;
     box-shadow:0px 10px 15px 3px #033b2f22;
     border-radius: 20px;
+    position: relative;
+}
+.card:hover .rest{
+    bottom: 15%;
+    opacity: 1;
+}
+.card:hover .overlay{
+    opacity: 1;
 }
 .card img{
-    width: 550px;
-    height: 350px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+}
+.rest{
+    width: 80%;
+    height: 15%;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+    background:#babebd ;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
 }
 .rest h3{
     color: rgb(3, 63, 53);
@@ -1040,11 +1060,87 @@ li a:hover{
 .rest button{
     font-size: 20px;
     width: 180px;
-    margin:10px ;
+    margin:1% ;
 }
 .ordI{
     position: relative;
     margin-left: 5px;
     font-size: 20px;
     top: 2%;
+}
+.overlay{
+    width: 500px;
+    position: absolute;
+    background: linear-gradient(#ffffff22,#4699cf);
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+@media screen and (max-width:1250px) {
+    .card{
+        width: 400px;
+        height: 350px;
+    }
+    .card img{
+        width: 400px;
+        height: 350px;
+    }
+    .Order{
+        height: 210%;
+    }
+}
+@media screen and (max-width:920px) {
+    .Order{
+        height: 155%;
+    }
+    .card{
+        width: 300px;
+        height: 230px;
+    }
+    .card img{
+        width: 300px;
+        height: 230px;
+    }
+    .rest h3{
+        font-size: 20px;
+    }
+    .rest button{
+        width: 120px;
+        font-size: 15px;
+        height: 30px;
+    }
+    .ordI{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:720px) {
+    .heading{
+        font-size: 35px;
+    }
+    .card{
+        width: 300px;
+        height: 230px;
+    }
+    .card img{
+        width: 300px;
+        height: 230px;
+    }
+    .rest h3{
+        font-size: 20px;
+    }
+    .rest button{
+        width: 120px;
+        font-size: 15px;
+    }
+    .ordI{
+        font-size: 15px;
+    }
+    .Ofoods{
+        top: 5%;
+    }
+    .Order{
+        height: 255%;
+    }
 }

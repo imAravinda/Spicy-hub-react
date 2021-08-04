@@ -15,6 +15,7 @@ const Order = () => {
                    <div className="image">
                        <img src={img1} alt="" />
                    </div>
+                   <div className="overlay"></div>
                    <div className="rest">
                        <h3>Fried Rice</h3>
                        <button className="Log">Order Now<FontAwesomeIcon icon ={faAngleDoubleRight} className="ordI"/></button>
@@ -24,6 +25,7 @@ const Order = () => {
                    <div className="image">
                        <img src={img2} alt="" />
                    </div>
+                   <div className="overlay"></div>
                    <div className="rest">
                        <h3>Soup</h3>
                        <button className="Log">Order Now<FontAwesomeIcon icon ={faAngleDoubleRight} className="ordI"/></button>
@@ -33,6 +35,7 @@ const Order = () => {
                    <div className="image">
                        <img src={img3} alt="" />
                    </div>
+                   <div className="overlay"></div>
                    <div className="rest">
                        <h3>Noodles</h3>
                        <button className="Log">Order Now<FontAwesomeIcon icon ={faAngleDoubleRight} className="ordI"/></button>
@@ -42,6 +45,7 @@ const Order = () => {
                    <div className="image">
                        <img src={img4} alt="" />
                    </div>
+                   <div className="overlay"></div>
                    <div className="rest">
                        <h3>Pizza</h3>
                        <button className="Log">Order Now<FontAwesomeIcon icon ={faAngleDoubleRight} className="ordI"/></button>
@@ -51,6 +55,7 @@ const Order = () => {
                    <div className="image">
                        <img src={img5} alt="" />
                    </div>
+                   <div className="overlay"></div>
                    <div className="rest">
                        <h3>Desserts</h3>
                        <button className="Log">Order Now<FontAwesomeIcon icon ={faAngleDoubleRight} className="ordI"/></button>
