@@ -26,7 +26,7 @@ function App() {
             <div className="content">
               <Home />
             </div>
-            <div data-aos="fade-up" className="serv">
+            <div  className="serv">
               <Services/>
             </div>
             <div data-aos="fade-up" className="reg">
