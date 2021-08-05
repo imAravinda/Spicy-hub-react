@@ -50,7 +50,7 @@ function App() {
           </div>
         </Route>
         <Route exact path="/Order">
-          <div className="OrderNow">
+          <div data-aos="fade-up" className="OrderNow">
             <Order />
           </div>
         </Route>

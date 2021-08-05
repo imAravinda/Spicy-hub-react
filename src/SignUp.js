@@ -50,7 +50,7 @@ const SignUp = ({transferForm}) => {
                 <input type="password" name="password"  required placeholder="Password" value={values.password} onChange={handleChange}/>
                 {errors.password && <p className="errors">{errors.password}</p>}<br />
                 <button className="Log" onClick={handleSubmit}>Register</button><br />
-                <span id="signup">Already have an account ? <button onClick={handleTransfer} class="click"> Sign In </button></span>
+                <span id="signup">Already have an account ? <button onClick={handleTransfer} class="click" > Sign In </button></span>
             </form>
         </div>
      );
