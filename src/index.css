@@ -796,6 +796,12 @@ li a:hover{
     background:rgb(151, 223, 219);
     height: 2px
 }
+@media screen and (max-width:1100px) {
+    .About img{
+        width: 700px;
+        height: 450px;
+    }
+}
 @media screen and (max-width:770px) {
     .About{
         height: 115%;
@@ -1128,5 +1134,27 @@ li a:hover{
     }
     .Order{
         height: 255%;
+    }
+}
+/* footer */
+.footer{
+    display: flex;
+    height: 70px;
+    color: white;
+    background: rgb(3, 58, 46);
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    position: relative;
+    top: 0;
+    font-weight: bold;
+}
+@media screen {
+    .footer{
+        height: 50px;
+    }
+    .footer p{
+        font-size: 12px;
     }
 }

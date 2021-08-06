@@ -12,6 +12,7 @@ import Aboutus from './About';
 import Contact from './contact';
 import Form from './Form';
 import Order from './Order';
+
 function App() {
   useEffect(() => {
     Aos.init({duration:1000});    
@@ -31,6 +32,9 @@ function App() {
             </div>
             <div data-aos="fade-up" className="reg">
               <Form />
+              <div className="footer">
+                <p>&copy; 2021 by Spicy Hut. All rights reserved.</p>
+              </div>
             </div>
           </>
         </Route>
@@ -55,7 +59,7 @@ function App() {
           </div>
         </Route>
       </Switch>
-      </div>      
+    </div>      
   </Router>
   );
 }
